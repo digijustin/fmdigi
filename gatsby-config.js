@@ -7,15 +7,15 @@ const postCSSMixins = require('postcss-mixins')
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Friend`,
-    description: `A simple starter for Gatsby. That's it.`,
-    copyrights: '',
-    author: `@panr`,
+    title: `FM Digi`,
+    description: `The Online Home of FM Digi`,
+    copyrights: '2020 FM Digi',
+    author: `FM Digi`,
     logo: {
       src: '',
       alt: '',
     },
-    logoText: 'hello friend',
+    logoText: 'FM Digi',
     defaultTheme: 'dark',
     postsPerPage: 5,
     showMenuItems: 2,
@@ -24,15 +24,7 @@ module.exports = {
       {
         title: 'About',
         path: '/about',
-      },
-      {
-        title: 'Showcase',
-        path: '/showcase',
-      },
-      {
-        title: 'Example',
-        path: '/example',
-      },
+      }
     ],
   },
   plugins: [
