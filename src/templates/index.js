@@ -19,6 +19,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           const {
             id,
             excerpt: autoExcerpt,
+            timeToRead,
             frontmatter: {
               title,
               date,
@@ -40,6 +41,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               coverImage={coverImage}
               tags={tags}
               excerpt={excerpt || autoExcerpt}
+              timeToRead={timeToRead}
             />
           )
         })}
@@ -75,9 +77,10 @@ export const postsQuery = graphql`
         node {
           id
           excerpt
+          timeToRead
           frontmatter {
             title
-            date(formatString: "DD MMMM YYYY")
+            date(formatString: "MMMM DD, YYYY")
             path
             author
             excerpt

@@ -1,6 +1,6 @@
 ---
 title: "Let’s Meet the New Team"
-date: "2020-07-08"
+date: "2020-07-12"
 path: "/lets-meet-the-new-team"
 author: "FM Digi"
 excerpt: "Welcome to Wakefield City. We have finished the pre-season and the results were mixed."

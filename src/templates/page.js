@@ -12,6 +12,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     excerpt: autoExcerpt,
     id,
     html,
+    timeToRead,
   } = data.markdownRemark
   const { next, previous } = pageContext
 
@@ -29,6 +30,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         tags={tags}
         previousPost={previous}
         nextPost={next}
+        timeToRead={timeToRead}
       />
     </Layout>
   )
@@ -49,7 +51,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
-        date(formatString: "DD MMMM YYYY")
+        date(formatString: "MMMM d YYYY")
         path
         author
         excerpt
@@ -65,6 +67,7 @@ export const pageQuery = graphql`
       id
       html
       excerpt
+      timeToRead
     }
   }
 `

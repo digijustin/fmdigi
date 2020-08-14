@@ -28,6 +28,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
               tags
             }
             fileAbsolutePath
+            timeToRead
           }
         }
       }
